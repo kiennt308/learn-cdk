@@ -1,0 +1,8 @@
+npm install create-vite@latest
+npm create vite@latest DX-frontend -- --template react-ts
+
+// CloudFront will cache its content and only update it after 24 hours
+=> aws cloudfront create-invalidation --distribution-id ... --paths "/*"
+Can get distribution-id from CloudFormation resource //  
+
+npm i jest ts-jest @types/jest

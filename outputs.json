@@ -1,0 +1,27 @@
+{
+  "ApplicationStackDataStackA56A3F6B": {
+    "ExportsOutputFnGetAttDXFrontendBF4C5B70Arn010C49C0": "arn:aws:s3:::dx-frontend-0a1c951a3eb1",
+    "DXImagesBucketName": "dx-images-0a1c951a3eb1",
+    "DXFrontendBucketName": "dx-frontend-0a1c951a3eb1",
+    "ExportsOutputFnGetAttDXImages100DED37ArnAF3D9CAE": "arn:aws:s3:::dx-images-0a1c951a3eb1",
+    "ExportsOutputFnGetAttDXFrontendBF4C5B70WebsiteURL15A629E5": "http://dx-frontend-0a1c951a3eb1.s3-website-ap-southeast-1.amazonaws.com",
+    "ExportsOutputFnGetAttChatHistoryTableA22BA13CArn2A2B7E38": "arn:aws:dynamodb:ap-southeast-1:935364008051:table/ChatHistoryTable-0a1c951a3eb1",
+    "ExportsOutputRefDXFrontendBF4C5B706744C148": "dx-frontend-0a1c951a3eb1",
+    "ExportsOutputRefChatHistoryTableA22BA13C5B671E77": "ChatHistoryTable-0a1c951a3eb1"
+  },
+  "ApplicationStackLambdaStack1BAE7050": {
+    "ExportsOutputFnGetAttchatHistoryLambda80E288D2ArnBE62A1C9": "arn:aws:lambda:ap-southeast-1:935364008051:function:ApplicationStackLambdaSta-chatHistoryLambda80E288D-m0eRdge7GcdS"
+  },
+  "UiDeploymentStack": {
+    "DXuideploymentS3Url": "http://dx-frontend-0a1c951a3eb1.s3-website-ap-southeast-1.amazonaws.com"
+  },
+  "ApplicationStackAuthStackA382CE0C": {
+    "DXUserPoolClientId": "7cg8hn7r8krmvrq1kk7d0vu3hu",
+    "DXIdentityPoolId": "ap-southeast-1:bc145e46-4ff2-4ac7-a58e-ab2064b5df51",
+    "ExportsOutputFnGetAttDXUserPool0DB656F6Arn3D0DFD2C": "arn:aws:cognito-idp:ap-southeast-1:935364008051:userpool/ap-southeast-1_FtW421s4q",
+    "DXUserPoolId": "ap-southeast-1_FtW421s4q"
+  },
+  "ApplicationStackApiStack3B0C725B": {
+    "chatHistoryApiEndpoint6F5DF741": "https://f2v1nu797c.execute-api.ap-southeast-1.amazonaws.com/prod/"
+  }
+}
