@@ -21,7 +21,7 @@ export class LambdaStack extends Stack {
         const chatHistoryLambda = new NodejsFunction(this, 'chatHistoryLambda', {
             runtime: Runtime.NODEJS_22_X,
             handler: 'handler',
-            entry: (join(__dirname, '..', '..', 'services', 'chatHistory', 'chatHistoryLambda.ts')),
+            entry: (join(__dirname, '../../services/chatHistory/ChatHistoryLambda.ts')),
             environment: {
                 TABLE_NAME: props.chatHistoryTable.tableName
             }
