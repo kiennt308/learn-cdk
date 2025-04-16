@@ -28,29 +28,29 @@ export class AppicationStack extends Stack {
 
         // Instantiate the individual stacks
         const dataStack = new DataStack(this, 'DataStack');
-        // const lambdaStack = new LambdaStack(this, 'LambdaStack', {
-        //     chatHistoryTable: dataStack.chatHistoryTable
-        // });
+        const lambdaStack = new LambdaStack(this, 'LambdaStack', {
+            chatHistoryTable: dataStack.chatHistoryTable
+        });
 
-        // const authStack = new AuthStack(this, 'AuthStack',{
-        //     imagesBucket: dataStack.imagesBucket
-        // });
+        const authStack = new AuthStack(this, 'AuthStack',{
+            imagesBucket: dataStack.imagesBucket
+        });
 
-        // const apiStack = new ApiStack(this, 'ApiStack', {
-        //     chatHistoryLambdaIntegration: lambdaStack.chatHistoryLambdaIntegration,
-        //     userPool: authStack.userPool
-        // });
+        const apiStack = new ApiStack(this, 'ApiStack', {
+            chatHistoryLambdaIntegration: lambdaStack.chatHistoryLambdaIntegration,
+            userPool: authStack.userPool
+        });
 
-        // const uiDeploymentStack = new UiDeploymentStack(app, 'UiDeploymentStack', {
-        //     deploymentBucket: dataStack.deploymentBucket
-        // })
+        const uiDeploymentStack = new UiDeploymentStack(app, 'UiDeploymentStack', {
+            deploymentBucket: dataStack.deploymentBucket
+        })
 
-        // // Add resources from individual stacks to the combined stack
-        // this.addDependency(dataStack);
-        // this.addDependency(lambdaStack);
-        // this.addDependency(authStack);
-        // this.addDependency(apiStack);
-        // this.addDependency(uiDeploymentStack);
+        // Add resources from individual stacks to the combined stack
+        this.addDependency(dataStack);
+        this.addDependency(lambdaStack);
+        this.addDependency(authStack);
+        this.addDependency(apiStack);
+        this.addDependency(uiDeploymentStack);
     }
 }
 
