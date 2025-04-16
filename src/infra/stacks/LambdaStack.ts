@@ -19,7 +19,7 @@ export class LambdaStack extends Stack {
 
         // chatHistory Lambda
         const chatHistoryLambda = new NodejsFunction(this, 'chatHistoryLambda', {
-            runtime: Runtime.NODEJS_18_X,
+            runtime: Runtime.NODEJS_22_X,
             handler: 'handler',
             entry: (join(__dirname, '..', '..', 'services', 'chatHistory', 'chatHistoryLambda.ts')),
             environment: {
