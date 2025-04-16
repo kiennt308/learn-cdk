@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "synth": "cdk synth",
     "test": "jest",
     "deploy": "cdk deploy --all --outputs-file outputs.json"
   },
