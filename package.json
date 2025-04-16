@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && vite build",
     "synth": "cdk synth",
     "test": "jest",
     "deploy": "cdk deploy --all --outputs-file outputs.json"
