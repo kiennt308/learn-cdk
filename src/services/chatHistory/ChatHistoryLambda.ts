@@ -35,7 +35,6 @@ async function handler(event: APIGatewayProxyEvent, context: Context): Promise<A
             default:
                 break;
         }
-
         addCorsHeader(response);
     
         // const response: APIGatewayProxyResult = {
